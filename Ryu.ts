@@ -1,0 +1,62 @@
+import { Personagem } from "./Personagem";
+
+export class Ryu implements Personagem {
+    private nome: string
+    private vida: number
+    private nacionalidade: string
+    private estiloLuta: string
+    constructor(nome: string, nacionalidade: string, estiloLuta: string) {
+        this.nome = nome
+        this.vida = 100
+        this.nacionalidade = nacionalidade
+        this.estiloLuta = estiloLuta
+    }
+
+    public getNome(): string {
+        return this.nome
+    }
+    public setNome(nome: string) {
+        this.nome = nome
+    }
+    public getVida(): number {
+        return this.vida
+    }
+    public setVida(vida: number) {
+        this.vida = vida
+    }
+    public getNacionalidade(): string {
+        return this.nacionalidade
+    }
+    public setNacionalidade(nacionalidade: string) {
+        this.nacionalidade = nacionalidade
+    }
+    public getEstiloLuta(): string {
+        return this.estiloLuta
+    }
+    public setEstiloLuta(estiloluta: string) {
+        this.estiloLuta = estiloluta
+    }
+    golpeLeve(dano: number) {
+        const min = 10
+        const max = 15
+
+        let danoLeve = Math.floor(Math.random() * (max - min + 1)) + min
+
+    }
+    golpePesado(dano: number) {
+        const min = 5
+        const max = 30
+
+        let danoPesado = Math.floor(Math.random() * (max - min + 1)) + min
+    
+    }
+    golpeEspecial(dano: number) { 
+        const min = 30
+        const max = 50
+
+        let danoEspecial = Math.floor(Math.random() * (max - min + 1)) + min
+        
+    }
+
+
+}
