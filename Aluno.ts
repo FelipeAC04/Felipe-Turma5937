@@ -49,10 +49,10 @@ export class Aluno {
     }
     exibirInformacoes() {
         return `
-      Nome: ${this.nome}
-      Idade: ${this.idade}
-      Nacionalidade: ${this.nacionalidade}
-      Casa: ${this.casa ? this.casa : 'A casa será sorteada'}
-      Classe Mágica: ${this.classeMagica}`
+      Nome: ${this.getNome}
+      Idade: ${this.getIdade}
+      Nacionalidade: ${this.getNacionalidade}
+      Casa: ${this.getCasa}
+      Classe Mágica: ${this.getClasseMagica}`
     }
 }
