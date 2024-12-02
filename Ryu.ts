@@ -5,6 +5,7 @@ export class Ryu implements Personagem {
     private vida: number
     private nacionalidade: string
     private estiloLuta: string
+    private usouGolpeEspecial: boolean = false
     constructor(nome: string, nacionalidade: string, estiloLuta: string) {
         this.nome = nome
         this.vida = 100
@@ -36,27 +37,31 @@ export class Ryu implements Personagem {
     public setEstiloLuta(estiloluta: string) {
         this.estiloLuta = estiloluta
     }
-    golpeLeve(dano: number) {
+    golpeLeve() {
         const min = 10
         const max = 15
 
         let danoLeve = Math.floor(Math.random() * (max - min + 1)) + min
-
+        return danoLeve
     }
-    golpePesado(dano: number) {
+    golpePesado() {
         const min = 5
         const max = 30
 
         let danoPesado = Math.floor(Math.random() * (max - min + 1)) + min
-    
+        return danoPesado
     }
-    golpeEspecial(dano: number) { 
-        const min = 30
-        const max = 50
+    golpeEspecial() {
+        if (this.usouGolpeEspecial) {
+            return 0
 
-        let danoEspecial = Math.floor(Math.random() * (max - min + 1)) + min
-        
+        } else {
+
+            const min = 30
+            const max = 50
+
+            let danoEspecial = Math.floor(Math.random() * (max - min + 1)) + min
+            return danoEspecial
+        }
     }
-
-
 }
