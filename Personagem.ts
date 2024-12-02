@@ -11,7 +11,7 @@ export interface Personagem {
     getEstiloLuta(): string
     setEstiloLuta(estiloluta: string): void
 
-    golpeLeve(): void
-    golpePesado(): void
-    golpeEspecial(): void
+    golpeLeve(): number
+    golpePesado(): number
+    golpeEspecial(): number
 }

@@ -6,11 +6,11 @@ export class Honda implements Personagem {
     private nacionalidade: string
     private estiloLuta: string
     private usouGolpeEspecial: boolean = false
-    constructor(nome: string, nacionalidade: string, estiloLuta: string) {
-        this.nome = nome
+    constructor() {
+        this.nome = 'Honda'
         this.vida = 100
-        this.nacionalidade = nacionalidade
-        this.estiloLuta = estiloLuta
+        this.nacionalidade = ''
+        this.estiloLuta = ''
     }
 
     public getNome(): string {
