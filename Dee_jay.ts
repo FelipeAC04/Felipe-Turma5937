@@ -1,6 +1,6 @@
 import { Personagem } from "./Personagem";
 
-export class Dee_jay implements Personagem {
+export class DeeJay implements Personagem {
     private nome: string
     private vida: number
     private nacionalidade: string

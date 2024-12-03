@@ -17,13 +17,13 @@ function selecionarPersonagem1() {
         var opcao = Number(ask.question("\njogador1 escolha seu personagem:"));
         switch (opcao) {
             case 0:
-                return new Bison_1.Bison();
+                return new Bison_1.Bison()
             case 1:
                 return new Blanka_1.Blanka();
             case 2:
                 return new Cammy_1.Cammy();
             case 3:
-                return new Dee_jay_1.Dee_jay();
+                return new Dee_jay_1.DeeJay();
             case 4:
                 return new Honda_1.Honda();
             case 5:
@@ -51,7 +51,7 @@ function selecionarPersonagem2() {
             case 2:
                 return new Cammy_1.Cammy();
             case 3:
-                return new Dee_jay_1.Dee_jay();
+                return new Dee_jay_1.DeeJay();
             case 4:
                 return new Honda_1.Honda();
             case 5:

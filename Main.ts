@@ -3,7 +3,7 @@ import { Personagem } from "./Personagem"
 import { Bison } from "./Bison"
 import { Blanka } from "./Blanka"
 import { Cammy } from "./Cammy"
-import { Dee_jay } from "./Dee_jay"
+import { DeeJay } from "./Dee_jay"
 import { Honda } from "./Honda"
 import { Ken } from "./Ken"
 import { Ryu } from "./Ryu"
@@ -39,7 +39,7 @@ jogador1 escolha seu personagem:`))
             case 2:
                 return new Cammy()
             case 3:
-                return new Dee_jay()
+                return new DeeJay()
             case 4:
                 return new Honda()
             case 5:
@@ -83,7 +83,7 @@ jogador2 escolha seu personagem: `))
             case 2:
                 return new Cammy()
             case 3:
-                return new Dee_jay()
+                return new DeeJay()
             case 4:
                 return new Honda()
             case 5:

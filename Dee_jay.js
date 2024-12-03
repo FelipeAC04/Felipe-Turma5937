@@ -1,51 +1,51 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Dee_jay = void 0;
-var Dee_jay = /** @class */ (function () {
-    function Dee_jay() {
+exports.DeeJay = void 0;
+var DeeJay = /** @class */ (function () {
+    function DeeJay() {
         this.usouGolpeEspecial = false;
         this.nome = 'Dee jay';
         this.vida = 100;
         this.nacionalidade = '';
         this.estiloLuta = '';
     }
-    Dee_jay.prototype.getNome = function () {
+    DeeJay.prototype.getNome = function () {
         return this.nome;
     };
-    Dee_jay.prototype.setNome = function (nome) {
+    DeeJay.prototype.setNome = function (nome) {
         this.nome = nome;
     };
-    Dee_jay.prototype.getVida = function () {
+    DeeJay.prototype.getVida = function () {
         return this.vida;
     };
-    Dee_jay.prototype.setVida = function (vida) {
+    DeeJay.prototype.setVida = function (vida) {
         this.vida = vida;
     };
-    Dee_jay.prototype.getNacionalidade = function () {
+    DeeJay.prototype.getNacionalidade = function () {
         return this.nacionalidade;
     };
-    Dee_jay.prototype.setNacionalidade = function (nacionalidade) {
+    DeeJay.prototype.setNacionalidade = function (nacionalidade) {
         this.nacionalidade = nacionalidade;
     };
-    Dee_jay.prototype.getEstiloLuta = function () {
+    DeeJay.prototype.getEstiloLuta = function () {
         return this.estiloLuta;
     };
-    Dee_jay.prototype.setEstiloLuta = function (estiloluta) {
+    DeeJay.prototype.setEstiloLuta = function (estiloluta) {
         this.estiloLuta = estiloluta;
     };
-    Dee_jay.prototype.golpeLeve = function () {
+    DeeJay.prototype.golpeLeve = function () {
         var min = 10;
         var max = 15;
         var danoLeve = Math.floor(Math.random() * (max - min + 1)) + min;
         return danoLeve;
     };
-    Dee_jay.prototype.golpePesado = function () {
+    DeeJay.prototype.golpePesado = function () {
         var min = 5;
         var max = 30;
         var danoPesado = Math.floor(Math.random() * (max - min + 1)) + min;
         return danoPesado;
     };
-    Dee_jay.prototype.golpeEspecial = function () {
+    DeeJay.prototype.golpeEspecial = function () {
         if (this.usouGolpeEspecial) {
             return 0;
         }
@@ -56,6 +56,6 @@ var Dee_jay = /** @class */ (function () {
             return danoEspecial;
         }
     };
-    return Dee_jay;
+    return DeeJay;
 }());
-exports.Dee_jay = Dee_jay;
+exports.DeeJay = DeeJay;
